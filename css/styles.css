@@ -1,0 +1,703 @@
+/*Estilos para Focus */
+:root {
+  --color1: rgb(0, 0, 0);
+  --color2: rgb(255, 255, 255);
+  --color3: rgb(64, 195, 130);
+  --color4: rgb(242, 242, 230);
+  --color4-m: rgba(242, 242, 230, 0.7);
+  font-size: 16px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 400;
+  color: var(--color1);
+  line-height: 1.6;
+  background-color: var(--color2);
+}
+h1,
+h2 {
+  font-weight: 700;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+p,
+legend {
+  font-size: 1.1rem;
+}
+abbr,
+.abbr {
+  cursor: help;
+  font-size: 1rem;
+}
+em {
+  font-style: italic;
+}
+
+/* Enlaces */
+a {
+  color: var(--color1);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a.site-menu:hover {
+  text-decoration: none;
+  color: var(--color3);
+}
+
+.green-mark {
+  color: var(--color2);
+  background-color: var(--color3);
+}
+
+header {
+  background: var(--color2);
+}
+header a:hover {
+  color: var(--color3);
+}
+footer {
+  background-color: var(--color1);
+  color: var(--color2);
+  font-size: 1rem;
+  padding: 4rem;
+}
+footer a {
+  color: var(--color2);
+}
+footer a:hover {
+  color: var(--color3);
+}
+footer div.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-part1 {
+  text-align: center;
+}
+footer .footer-lists * {
+  display: inline-block;
+}
+.footer-lists {
+  display: flex;
+  justify-content: center;
+}
+.footer-privacy {
+  flex-direction: column;
+  align-items: center;
+}
+footer .footer-rrss img:hover {
+  opacity: 0.7;
+}
+
+main {
+  padding-bottom: 3rem;
+}
+/*Botones*/
+.button {
+  margin-top: 1rem;
+  background-color: transparent;
+  color: var(--color1);
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+}
+.button:hover {
+  color: green;
+}
+
+.dotted-link {
+  text-decoration: underline dotted;
+}
+.dotted-link:hover {
+  text-decoration: underline solid;
+}
+/*HEADER*/
+
+/*FOOTER*/
+/*Contenedores*/
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-limited {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.menu {
+  text-transform: uppercase;
+  font-weight: bold;
+  list-style: none;
+}
+
+/*Estrucctura header*/
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+/*index.html*/
+main {
+  background-color: var(--color4);
+}
+
+.home .headlineWrapper {
+  width: 100%;
+  background-image: url(../img/hero-image-home.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 55vh;
+  color: var(--color2);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.home .headlineWrapper .title-lema {
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  height: 100%;
+  font-size: 1.5rem;
+}
+.home .headlineWrapper .lema {
+  font-size: 2.2rem;
+  line-height: 2.2rem;
+  padding: 2rem 1rem;
+}
+
+.home .headlineWrapper .button {
+  display: inline-block;
+  border: none;
+  background-color: var(--color4-m);
+  align-self: end;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  position: absolute;
+  bottom: 0;
+  font-size: 0.8rem;
+}
+.home h2 {
+  padding-top: 1.5rem;
+}
+.home p {
+  margin-bottom: 0.5rem;
+}
+.home legend {
+  font-size: 1.2rem;
+}
+
+section fieldset {
+  border: none;
+}
+
+/*index - sección suscripcion*/
+.home form {
+  width: 100%;
+}
+.home form ul {
+  list-style-type: none;
+  margin-top: 1rem;
+}
+.home form input:not([type="checkbox"]) {
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+}
+.home form input:not([type="checkbox"]),
+.home form label {
+  width: 100%;
+  border: none;
+}
+
+.home section .container form input[type="text"] {
+  background-color: white;
+}
+
+/*index-cards*/
+.home .cards {
+  margin: 2rem auto;
+}
+.home .card {
+  width: 100%;
+  background-color: var(--color2);
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.home .card .button {
+  margin-top: auto;
+  align-self: flex-start;
+  padding: 0.5rem 1rem;
+}
+.home .card h2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.home .card p {
+  font-size: 1.21rem;
+}
+
+.home .card-span {
+  grid-column: span 12;
+}
+.home .info-web-span {
+  grid-column: span 12;
+}
+.home .suscription-form-span {
+  grid-column: span 12;
+}
+
+/*tema del mes*/
+
+.tema-del-mes .menu-tema li {
+  font-weight: bold;
+}
+.tema-del-mes .menu-tema a:hover {
+  font-weight: bold;
+  color: var(--color3);
+}
+.tema-del-mes .menu-tema li:not(:last-child)::after {
+  content: "·";
+  color: var(--color3);
+  margin: 0 0.2rem;
+}
+.tema-del-mes .card-img figcaption {
+  font-size: 0.6rem;
+}
+
+.tema-del-mes .headlineWrapper .title,
+.tema-del-mes .headlineWrapper .lema {
+  text-align: center;
+}
+.tema-del-mes .headlineWrapper .title {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 3rem;
+  padding: 3rem 4rem;
+}
+.tema-del-mes .headlineWrapper .lema {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.tema-del-mes .card-head h2 {
+  font-size: 2rem;
+  line-height: 2rem;
+}
+
+/*BLOG y POST*/
+/* Con los tres selectores siguientes, ajusto la imagen y el botón*/
+.blog .title-lema {
+  padding-top: 1rem;
+}
+.blog .card-img,
+.post .card-img {
+  position: relative;
+}
+
+.blog picture img,
+.post picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.blog .card figcaption,
+.post .card figcaption {
+  display: inline-block;
+  border: none;
+  background-color: var(--color4-m);
+  padding: 0.2rem 0.4rem;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0.6rem;
+  margin-right: 0.6rem;
+  right: 0;
+  font-size: 0.8rem;
+}
+.blog .card,
+.post .card {
+  background-color: var(--color2);
+  margin: 1rem;
+  min-width: 200px;
+}
+.blog .card-title,
+.post .card-title {
+  font-size: 1.2rem;
+}
+.blog .card-main,
+.blog .card-footer,
+.post .card-main,
+.post .card-footer {
+  padding: 1rem;
+}
+.blog .card-main .card-author-date,
+.post .card-main .card-author-date {
+  font-size: 0.9rem;
+}
+
+.post iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+.pagination {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  justify-content: center;
+}
+
+.blog .pagination li {
+  border: 1px solid black;
+  line-height: 1.4rem; /*padding+font-size*/
+  padding: 0.4rem 0.8rem;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--color2);
+}
+.blog .pagination .active,
+.blog .pagination li:hover {
+  background-color: var(--color3);
+  border: 1px solid var(--color3);
+  color: var(--color2);
+}
+
+/*POST */
+.post .navigation {
+  padding-top: 1rem;
+}
+.post .navigation ul {
+  display: flex;
+  list-style-type: none;
+}
+.post .navigation li:not(:last-child)::after {
+  content: " > ";
+  padding: 0 0.4rem;
+}
+.post .navigation a:hover {
+  color: var(--color3);
+}
+
+.post h2 {
+  font-size: 2rem;
+}
+.post .post-intro {
+  margin-top: 1.5rem;
+}
+.post .article-title .lema {
+  font-size: 0.9rem;
+}
+.post ol {
+  list-style-position: inside;
+  text-indent: -1rem;
+  margin-left: 2rem;
+}
+
+.post .headlineWrapper {
+  width: 100%;
+  background-image: url(../img/post-fast-fashion.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.post .headlineWrapper .button {
+  display: inline-block;
+  border: none;
+  background-color: var(--color4-m);
+  align-self: end;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  position: absolute;
+  bottom: 0;
+}
+.post .aside {
+  border-top: 1px solid black;
+  margin-top: 2rem;
+  padding: 0.5rem;
+}
+.post .aside h2 {
+  padding: 0 1rem; /*Caldulado a partir del padding de cada card*/
+}
+/*DIStribucion de conttenidos*/
+
+.home .d-grid-number {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2.5rem;
+}
+.tema-del-mes .menu-tema {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: 2rem auto;
+}
+.tema-del-mes .d-grid-number {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+.tema-del-mes .cards {
+  padding: 1rem;
+  width: 100vw;
+}
+
+.tema-del-mes .card {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.tema-del-mes .card-img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.tema-del-mes .card-img img {
+  width: 100%;
+  padding: 1rem;
+  background-color: white;
+}
+.blog .headlineWrapper .title {
+  text-align: center;
+  font-size: 2.4rem;
+}
+.blog .cards {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.blog .card,
+.post .card {
+  flex: 1 1 220px;
+  max-width: 480px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.blog .card-footer,
+.post .card-footer {
+  margin-top: auto;
+}
+.blog .cards {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(400px, 1fr));
+}
+.post .post .cards {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(400px, 1fr));
+}
+
+.post .post-video {
+  margin: 1rem auto;
+}
+.post iframe {
+  width: 95%;
+  aspect-ratio: 16 / 9;
+}
+
+.title-web-span {
+  grid-column: span 12;
+}
+
+/* MEDIA QUERIES Tablets **********************************/
+@media (min-width: 481px) {
+  /*index-cards*/
+  .home .d-grid-number {
+    grid-gap: 2rem;
+  }
+  .home .card-span {
+    grid-column: span 4;
+  }
+  .home .card h3 {
+    font-size: 1.1rem;
+  }
+  .home .card p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+  /*index-form*/
+
+  .home .info-web-span {
+    grid-column: span 12;
+  }
+  .home .suscription-form-span {
+    grid-column: span 8;
+  }
+
+  .blog .cards {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .post .cards {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+  }
+}
+
+/* Para dispositivos grandes (>= 769px) */
+@media (min-width: 769px) {
+  header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+  }
+  .menu li:not(:last-child)::after {
+    content: "|";
+    margin: 1rem;
+  }
+
+  footer div.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-lists {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+  footer .footer-part1 {
+    text-align: left;
+  }
+
+  .footer-privacy li:not(:last-child)::after {
+    content: "|";
+    margin: 1rem;
+  }
+  .home .title-lema h1 {
+    font-size: 4rem;
+    line-height: 3rem;
+  }
+
+  .home .info-web-span {
+    grid-column: span 7;
+  }
+  .home .suscription-form-span {
+    grid-column: span 5;
+  }
+
+  .home .card h3 {
+    font-size: 1.3rem;
+  }
+  .home .card p {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+  }
+
+  .tema-del-mes .d-grid-number {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+  }
+
+  .tema-del-mes .card {
+    display: contents;
+  }
+  .tema-del-mes .cards {
+    display: contents;
+  }
+
+  .tema-del-mes .menu-tema {
+    margin: 0;
+    grid-column: 1 / 2;
+    grid-row: 1 / 7;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .tema-del-mes .card-head {
+    grid-column: 2 / 3;
+    grid-row: span 1;
+  }
+  .tema-del-mes .card-img {
+    grid-column: 3 / 4;
+    min-width: 250px;
+    padding: 0 1rem;
+  }
+
+  .tema-del-mes .card-main {
+    grid-column: 4 / 6;
+    padding-right: 2rem;
+  }
+
+  .tema-del-mes .menu-tema li:not(:last-child)::after {
+    content: "";
+  }
+  .tema-del-mes .menu-tema li {
+    margin-left: 3rem;
+  }
+
+  .post .post-video {
+    margin: 1rem auto;
+  }
+  .post .post-video iframe {
+    width: 70%;
+    aspect-ratio: 16 / 9;
+    margin: 0 15%;
+  }
+  .post .post-video figcaption {
+    margin: 0 15%;
+  }
+  .blog .cards {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    justify-content: space-between;
+  }
+  .post .cards {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    justify-content: space-between;
+  }
+}
